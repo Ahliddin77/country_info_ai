@@ -9,6 +9,13 @@ This application uses OpenAI's GPT model to fetch detailed information about cou
    - Save the fetched country information to a MongoDB database.
 2. **Database Integration**:
    - Store and retrieve country information from MongoDB.
+3. **GitHub Authentication**:
+   - Authenticate users via GitHub using `passport.js`.
+
+### GitHub Authentication
+
+- `GET /auth/github` - Redirect to GitHub for login.
+- `GET /auth/github/callback` - Handle GitHub login callback.
 
 ## Endpoints
 
@@ -22,3 +29,4 @@ This application uses OpenAI's GPT model to fetch detailed information about cou
 - **MongoDB**: Database for storing country information.
 - **Mongoose**: ODM for MongoDB.
 - **OpenAI API**: For AI-powered country information.
+- **Passport.js**: For GitHub authentication.
